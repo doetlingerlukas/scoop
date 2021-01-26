@@ -1,0 +1,18 @@
+{
+  "version": "1.4.3",
+  "description": "Tiled is a general purpose tile map editor for all tile-based games, such as RPGs, platformers or Breakout clones.",
+  "homepage": "https://www.mapeditor.org/",
+  "url": "https://github.com/mapeditor/tiled/releases/download/v1.4.3/Tiled-1.4.3-win64.msi",
+  "hash": "99bb2490c2e3480039cda79b270e258e55fb3cf624164734b69333267dfbda7b",
+  "extract_dir": "Tiled",
+  "bin": [
+    [
+      "tiled.exe",
+      "tiled"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/mapeditor/tiled",
+    "regex": "tag/v([\\w.]+)"
+  }
+}
