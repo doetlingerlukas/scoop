@@ -4,7 +4,7 @@
   "homepage": "https://www.mapeditor.org/",
   "url": "https://github.com/mapeditor/tiled/releases/download/v1.4.3/Tiled-1.4.3-win64.msi",
   "hash": "99bb2490c2e3480039cda79b270e258e55fb3cf624164734b69333267dfbda7b",
-  "extract_dir": "Tiled",
+  "extract_dir": "PFiles\\Tiled",
   "bin": [
     [
       "tiled.exe",
