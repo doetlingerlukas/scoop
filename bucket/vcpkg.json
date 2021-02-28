@@ -1,0 +1,35 @@
+{
+  "version": "2020.11",
+  "description": "C++ Library Manager for Windows, Linux, and MacOS",
+  "homepage": "https://github.com/microsoft/vcpkg",
+  "license": {
+    "identifier": "MIT",
+    "url": "https://github.com/microsoft/vcpkg/blob/master/LICENSE.txt"
+  },
+  "url": "https://github.com/microsoft/vcpkg/archive/2020.11.zip",
+  "hash": "c029419cd6b559da891b59aa356d55f5100ab1d1f5a164dec1777f6020b996cb",
+  "extract_dir": "vcpkg-2020.11",
+  "installer": {
+    "file": "bootstrap-vcpkg.bat",
+    "args": "-disableMetrics",
+    "keep": true
+  },
+  "post_install": [
+    "vcpkg.exe integrate install",
+    "vcpkg.exe integrate powershell"
+  ],
+  "bin": [
+    [
+      "vcpkg.exe",
+      "vcpkg"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/microsoft/vcpkg",
+    "regex": "tag/([\\w.-]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/microsoft/vcpkg/archive/$version.zip",
+    "extract_dir": "vcpkg-$version"
+  }
+}
